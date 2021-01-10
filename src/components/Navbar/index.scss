@@ -1,0 +1,25 @@
+@import '../../styles/_variables';
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+
+    &__logo {
+        flex: 1 1 auto;
+    }
+    &__links {
+        flex: 2 1 auto;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    list-style: none;
+    
+    &__link--active {
+        color: $green-slimer-ghost;
+    } 
+}
