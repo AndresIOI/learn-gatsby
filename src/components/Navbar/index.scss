@@ -1,25 +1,76 @@
 @import '../../styles/_variables';
 
-.nav {
-    display: flex;
-    align-items: center;
-    padding: 10px 0px;
-
-    &__logo {
-        flex: 1 1 auto;
-    }
-    &__links {
-        flex: 2 1 auto;
-    }
-}
-
-.links {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px;
-    list-style: none;
+.link {
     
-    &__link--active {
-        color: $green-slimer-ghost;
-    } 
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    border: 2px solid black;
+    cursor: pointer;
+
+    &--about {
+        grid-area: about;       
+        background-image: url('../../images/about-2.jpg');
+    }
+    &--movies {
+        grid-area: movies;
+        background-image: url('../../images/about.jpg');
+    }
+    &--characters {
+        grid-area: characters;
+        background-image: url('../../images/characters-4.jpg');
+    }
+    &--shop {
+        grid-area: shop;
+        background-image: url('../../images/shop.jpg');
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    p {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 6rem;
+        background-color: rgba(0,0,0,0.8);
+        opacity: .6;
+        transition: .5s;
+    }
+    p:hover {
+        background-color: rgba(0,0,0,0);
+        opacity: 1;
+    }
+
 }
+
+.nav {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1/2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "about movies movies"
+            "characters characters shop"
+        ;
+    }
+}
+
+

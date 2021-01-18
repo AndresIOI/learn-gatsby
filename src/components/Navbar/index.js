@@ -1,17 +1,23 @@
 import React from 'react'
+import logo from '../../images/logo_white.png'
 import './index.scss'
 
 const Navbar = () => {
     return (
         <nav className="nav">
-            <h1 className="nav__logo">Ghostbusters</h1>
-            <div className="nav__links">
-                <ul className="links">
-                    <li className="links__link--active">About</li>
-                    <li className="links__link">Movies</li>
-                    <li className="links__link">Characters</li>
-                    <li className="links__link">Shop</li>
-                </ul>
+            <div className="nav__container">
+                <div className="link link--about">
+                    <p>About</p>
+                </div>
+                <div className="link link--movies">
+                    <p>Movies</p>
+                </div>
+                <div className="link link--characters">
+                    <p>Characters</p>
+                </div>
+                <div className="link link--shop">
+                    <p>Shop</p>
+                </div>
             </div>
         </nav>
     );
