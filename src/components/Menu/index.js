@@ -1,26 +1,26 @@
 import React from 'react'
-import logo from '../../images/logo_white.png'
+import { Link } from 'gatsby'
 import './index.scss'
 
-const Navbar = () => {
+const Menu = () => {
     return (
-        <nav className="nav">
-            <div className="nav__links">
+        <nav className="menu">
+            <div className="menu__links">
                 <div className="link link--about">
-                    <p>About</p>
+                    <Link to='/about/'>About</Link>
                 </div>
                 <div className="link link--movies">
-                    <p>Movies</p>
+                    <Link to='/about/'>Movies</Link>
                 </div>
                 <div className="link link--characters">
-                    <p>Characters</p>
+                    <Link to='/about/'>Characters</Link>
                 </div>
                 <div className="link link--shop">
-                    <p>Shop</p>
+                    <Link to='/about/'>Shop</Link>
                 </div>
             </div>
         </nav>
     );
 }
 
-export default Navbar;
+export default Menu;

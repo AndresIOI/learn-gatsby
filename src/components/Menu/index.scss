@@ -1,6 +1,6 @@
 @import '../../styles/_variables';
 
-.nav {
+.menu {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -53,7 +53,7 @@
         background-color: rgba(0,0,0,0.6);
     }
 
-    p {
+    a {
         position: relative;
         display: flex;
         justify-content: center;
@@ -66,14 +66,14 @@
         opacity: .6;
         transition: .5s;
     }
-    p:hover {
+    a:hover {
         background-color: rgba(0,0,0,0);
         opacity: 1;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .nav {
+    .menu {
         &__links {
             display: flex;
             flex-direction: column;
