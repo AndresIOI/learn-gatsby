@@ -5,7 +5,7 @@ import './index.scss'
 const Navbar = () => {
     return (
         <nav className="nav">
-            <div className="nav__container">
+            <div className="nav__links">
                 <div className="link link--about">
                     <p>About</p>
                 </div>

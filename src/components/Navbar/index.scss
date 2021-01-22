@@ -1,5 +1,21 @@
 @import '../../styles/_variables';
 
+.nav {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    &__links {
+        display: grid;
+        grid-template-columns: 1fr 1/2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "about movies movies"
+            "characters characters shop"
+        ;
+    }
+}
+
 .link {
     
     height: 50vh;
@@ -54,23 +70,17 @@
         background-color: rgba(0,0,0,0);
         opacity: 1;
     }
-
 }
 
-.nav {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-
-    &__container {
-        display: grid;
-        grid-template-columns: 1fr 1/2fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "about movies movies"
-            "characters characters shop"
-        ;
+@media screen and (max-width: 768px) {
+    .nav {
+        &__links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .link {
+        height: 25vh;
     }
 }
-
 
