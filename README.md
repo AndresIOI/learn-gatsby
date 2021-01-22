@@ -1,3 +1,3 @@
 ## 🚀 Site
 
-[Ghostbusters](https://condescending-easley-1b6c2e.netlify.app/)._
+Enlace: [Ghostbusters](https://condescending-easley-1b6c2e.netlify.app/)
