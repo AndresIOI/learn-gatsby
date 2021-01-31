@@ -1,7 +1,14 @@
 import React from 'react'
+import Container from '../components/miscellaneous/Container'
+import Navbar from '../components/miscellaneous/Navbar'
 
 const About = () => {
-    return <h1>About Page</h1>
+    return(
+        <Container>
+            <Navbar/>
+            <h1>About Seccion</h1>
+        </Container>
+    );
 }
 
 export default About
