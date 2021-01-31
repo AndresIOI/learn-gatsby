@@ -29,6 +29,14 @@
             }
         }
     }
-
+    & p {
+        display: none;
+    }
     
+}
+
+@media (max-width: 768px) {
+    .navbar__links {
+        display: none;
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import ToggleNavbar from '../ToggleNavbar'
 import './index.scss'
 
 const Navbar = () => {
@@ -22,6 +23,7 @@ const Navbar = () => {
                     <Link to='/Shop'>Shop</Link>
                 </li>
             </ul>
+            <ToggleNavbar />
         </nav>
     )
 }
